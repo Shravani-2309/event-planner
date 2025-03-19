@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #78938A;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading
+{
+   background-image: url("photo.jpg");
+    background-size: cover;
+    height:250px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.about
+{
+    background-color: #31363F;
+    height:50px;
+    width:100%;
+    
+   display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.more
+{
+margin-top: 20px;
+width:100%;
+font-size: 1.2rem;
+text-align:justify;
+font-family:'Times New Roman', Times, serif;
+
+}
+.shop
+{
+display:flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+background-color: #78938A;
+width:100%;
+margin-bottom: 10px;
+}
+.box
+{
+height:250px;
+width:21%;
+margin:15px;
+background-color: white;
+padding: 20px 0px 15px;
+}
+.box-img1
+{
+    height:200px;
+    background-image: url('wedding.jpg');
+    background-size: auto;
+    margin-top:15px;
+}
+.box-img2
+{
+    height:200px;
+    background-image: url('bday.jpg');
+    background-size: auto;
+    margin-top:15px;
+}
+.box-img3
+{
+    height:200px;
+    background-image: url('conf.jpg');
+    background-size: auto;
+    margin-top:15px;
+}
+.box-img4
+{
+    height:200px;
+    background-image: url('meet.jpg');
+    background-size: cover;
+    margin-top:15px;
+}
+.box-content
+{
+    margin-top:5px;
+    margin-left:20px;
+    margin-right:20px;
+    margin-bottom: 10px;
+    color: #31363F;
+    font-size: small;
+    text-align: center;
+}
+.many{
+    text-align: center;
+    background-color:#78938A;
+    width:100%;
+    height:25px;
+color: black;
+}
+.container {
+    background-color: eagle; /* Light pink background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    color: black; 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #31363F; /* Darker red for labels */
+}
+
+input, button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input {
+    background-color: #bfcbce; /* White background for inputs */
+    color: #333; /* Dark text color */
+}
+
+button {
+    background-color: #006989; /* Soft red for buttons */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #31363F; /* Darker red on hover */
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-column:last-child {
+    margin-right: 0;
+}
+
+#output {
+    margin-top: 20px;
+}
