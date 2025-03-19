@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planner</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="heading"></div>
+    <div class="about"> Where Planning Meets Perfection. </div>
+    <div class="more">Welcome to Event Planner! Our website is your ultimate destination for seamless and stress-free event planning. Whether you're organizing a wedding, birthday party, corporate gathering, or any special occasion, we've got you covered. With our user-friendly interface, you can easily manage every detail of your event, from selecting the perfect venue and managing your budget to organizing guest lists and creating customized schedules. </div>
+    <div class="shop">
+        <div class="box1 box"> 
+            <div class="box-content">
+                <h2>WEDDING</h2>
+                <div class="box-img1"></div>
+            </div>
+        </div>
+        <div class="box2 box"> 
+            <div class="box-content">
+                <h2>BIRTHDAYS</h2>
+                <div class="box-img2"></div>
+            </div>
+        </div>
+        <div class="box3 box"> 
+            <div class="box-content">
+                <h2>CONFERENCES</h2>
+                <div class="box-img3"></div>
+            </div>
+        </div>
+        <div class="box4 box"> 
+            <div class="box-content">
+                <h2>MEETUP</h2>
+                <div class="box-img4"></div>
+            </div>
+        </div>
+    </div>
+    <div class="many"> And many more....</div>
+    <div class="container">
+        <h1>Event Planner</h1>
+        <form id="eventForm">
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName" required>
+
+            <label for="eventDate">Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+
+            <label for="eventTime">Time:</label>
+            <input type="time" id="eventTime" name="eventTime" required>
+
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="eventVenue">Venue:</label>
+                    <input type="text" id="eventVenue" name="eventVenue" required>
+                </div>
+                <div class="form-column">
+                    <label for="eventBudget">Budget:</label>
+                    <input type="number" id="eventBudget" name="eventBudget" required>
+                </div>
+                <div class="form-column">
+                    <label for="numSeats">Number of Seats:</label>
+                    <input type="number" id="numSeats" name="numSeats" required>
+                </div>
+            </div>
+
+            <div id="guestNames"></div>
+
+            <button type="button" onclick="generateGuestFields()">Generate Guest Fields</button>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="output"></div>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
